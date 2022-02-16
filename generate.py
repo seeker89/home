@@ -22,6 +22,11 @@ for venue in context.get("venues", []):
     venues_by_name[venue.get("name")] = venue.get("url")
 context["venues_by_name"] = venues_by_name
 
+icon_by_type = dict()
+for t in context.get("types", []):
+    icon_by_type[t.get("name")] = t.get("icon")
+context["icon_by_type"] = icon_by_type
+
 # MAIN PAGES
 print(DIVIDER)
 print("Generating main pages")
