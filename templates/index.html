@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mikolaj Pawlikowski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mikolaj Pawlikowski">
+    <link href="./bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
+    <script type="module" src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.js"></script>
+</head>
+<body class="text-center">
+<div class="container">
+
+<div class="row"><div class="col">
+<img class="mt-5" src="./profile.png" width="150em" style="border-radius: 50%;"/>
+<h1>Mikolaj Pawlikowski</h1>
+<p class="lead">Software engineer, author, speaker</p>
+
+<p>
+    {%- for social in socials %}
+    <a href="{{ social.url }}" target="_blank">
+        <img src="{{ social.icon }}" width="50em" />
+    </a>
+    {%- endfor %}
+</p>
+
+<deckgo-highlight-code language="python" terminal="carbon" class="mt-5" id="miko-code">
+<code slot="code">
+# books I've written
+books = [
+    dict(
+        title="Chaos Engineering: Crash test your applications",
+        url="https://www.manning.com/books/chaos-engineering",
+    )
+]
+
+# open source projects I created
+projects = [
+    dict(
+        name="PowerfulSeal",
+        description="Chaos Engineering for kubernetes",
+        url="https://github.com/powerfulseal/powerfulseal",
+    ),
+    dict(
+        name="Goldpinger",
+        description="Networking monitoring for kubernetes",
+        url="https://github.com/bloomberg/goldpinger",
+    ),
+]
+
+miko = {
+    "technologies": ["linux", "containers", "kubernetes", "go", "python", "ansible", "terraform"],
+    "books": books,
+    "projects": projects,
+}
+</code>
+</deckgo-highlight-code>
+</div></div>
+
+
+<div class="row mt-3"><div class="col">
+    <h2 class="mt-2">Speaking engagements</h1>
+</div></div>
+
+
+<div class="row mt-3"><div class="col">
+<table class="table">
+<tbody>
+    <tr class="text-left">
+        <td><a href="https://www.youtube.com/watch?v=lxC4nFvvtvs" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
+        <td><a href="https://www.youtube.com/watch?v=lxC4nFvvtvs" target="_blank">Chaos Community Broadcast: Episode 8</a></td>
+    </tr>
+    <tr class="text-left">
+        <td><a href="https://podcasts.apple.com/us/podcast/mikolaj-pawlikowski-chaos-engineer-crash-testing-your/id1480732807?i=1000493742757" target="_blank"><img src="./SuperTinyIcons/images/svg/itunes_podcasts.svg" width="30em" /></a></td>
+        <td><a href="https://podcasts.apple.com/us/podcast/mikolaj-pawlikowski-chaos-engineer-crash-testing-your/id1480732807?i=1000493742757" target="_blank">Develomentor - Episode 97: Mikolaj Pawlikowski – Chaos Engineer, Crash Testing Your Applications</a></td>
+    </tr>
+    <tr class="text-left">
+        <td><a href="https://webinars.devops.com/getting-stakeholder-buy-in-for-chaos-engineering" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
+        <td><a href="https://webinars.devops.com/getting-stakeholder-buy-in-for-chaos-engineering" target="_blank">DevOps.com - Getting Stakeholder Buy-in for Chaos Engineering</a></td>
+    </tr>
+    <tr class="text-left">
+        <td><a href="https://www.youtube.com/watch?v=9pBMn3DwHNY" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
+        <td><a href="https://www.youtube.com/watch?v=9pBMn3DwHNY" target="_blank">SRES ❤️ CHAOS ENGINEERING | MIKOLAJ PAWLIKOWSKI | CONF42: SRE</a></td>
+    </tr>
+    <tr class="text-left">
+        <td><a href="https://theguiltytester.libsyn.com/the-guilty-tester-episode-18-mikolaj-pawlikowski-chaos-engineering" target="_blank"><img src="./SuperTinyIcons/images/svg/itunes_podcasts.svg" width="30em" /></a></td>
+        <td><a href="https://theguiltytester.libsyn.com/the-guilty-tester-episode-18-mikolaj-pawlikowski-chaos-engineering" target="_blank">The Guilty Tester - Episode 18 - Mikolaj Pawlikowski - Chaos Engineering</a></td>
+    </tr>
+    <tr class="text-left">
+        <td><a href="https://www.youtube.com/watch?v=uy9d54YDTww" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
+        <td><a href="https://www.youtube.com/watch?v=uy9d54YDTww" target="_blank">Creating Chaos using PowerfulSeal with Mikolaj Pawlikowski</a></td>
+    </tr>
+    <tr class="text-left">
+        <td><a href="https://www.devopsparadox.com/episodes/how-to-use-powerfulseal-to-create-chaos-in-your-kubernetes-clusters-61" target="_blank"><img src="./SuperTinyIcons/images/svg/itunes_podcasts.svg" width="30em" /></a></td>
+        <td><a href="https://www.devopsparadox.com/episodes/how-to-use-powerfulseal-to-create-chaos-in-your-kubernetes-clusters-61" target="_blank">DevOps Paradox episode 61: How To Use PowerfulSeal To Create Chaos In Your Kubernetes Clusters</a></td>
+    </tr>
+    <tr class="text-left">
+        <td><a href="https://sysadministrivia.com/episodes/S5E9" target="_blank"><img src="./SuperTinyIcons/images/svg/itunes_podcasts.svg" width="30em" /></a></td>
+        <td><a href="https://sysadministrivia.com/episodes/S5E9" target="_blank">Sysadministrivia S5E9: "Chaotic Good"</a></td>
+    </tr>
+    <tr class="text-left">
+        <td><a href="https://www.youtube.com/watch?v=KKFiR_F3n8I" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
+        <td><a href="https://www.youtube.com/watch?v=KKFiR_F3n8I" target="_blank">Introducing Chaos in Bloomberg</a></td>
+    </tr>
+    <tr class="text-left">
+        <td><a href="https://www.youtube.com/watch?v=DSFxRz_0TU4" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
+        <td><a href="https://www.youtube.com/watch?v=DSFxRz_0TU4" target="_blank">Visualise Cluster Connectivity with Goldpinger; Smash it with PowerfulSeal</a></td>
+    </tr>
+    <tr class="text-left">
+        <td><a href="https://www.youtube.com/watch?v=00BMn0UjsG4" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
+        <td><a href="https://www.youtube.com/watch?v=00BMn0UjsG4" target="_blank">Testing Distributed Software on Kubernetes with PowerfulSeal</a></td>
+    </tr>
+</tbody>
+</table>
+</div></div>
+
+
+<div class="row"><div class="col">
+    <h2 class="mt-2">Contact</h1>
+
+    <p>Get in touch at <code>MY_FIRST_NAME@MY_LAST_NAME.pl</code></p>
+</div></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+types:
+  - name: podcast
+    icon: ./SuperTinyIcons/images/svg/itunes_podcasts.svg
+  - name: talk
+    icon: ./SuperTinyIcons/images/svg/youtube.svg
+  - name: podcast
+    icon: ./SuperTinyIcons/images/svg/youtube.svg
+
+socials:
+  - url: https://github.com/seeker89
+    icon: ./SuperTinyIcons/images/svg/github.svg
+  - url: https://www.linkedin.com/in/mikolajpawlikowski/
+    icon: ./SuperTinyIcons/images/svg/linkedin.svg
+  - url: https://twitter.com/mikopawlikowski
+    icon: ./SuperTinyIcons/images/svg/twitter.svg
+
+venues:
+  - name: The Guilty Tester
+    url: https://theguiltytester.libsyn.com/
+  - name: Chaos Community Broadcast
+    url: https://chaos.community/
+  - name: Develomentor
+    urL: https://develomentor.com/
+  - name: DevOps Paradox
+    url: https://www.devopsparadox.com/
+  - name: Sysadministrivia
+    url: https://sysadministrivia.com/
+  - name: ChaosConf
+    url: https://www.chaosconf.io/
+
+speaking:
+  - type: podcast
+    title: Episode 8
+    venue: Chaos Community Broadcast
+    date: 2020-09-19
+    url: https://www.youtube.com/watch?v=lxC4nFvvtvs
+
+  - type: podcast
+    title: "Episode 97: Mikolaj Pawlikowski – Chaos Engineer, Crash Testing Your Applications"
+    date: 2020-10-05
+    venue: Develomentor
+    url: https://podcasts.apple.com/us/podcast/mikolaj-pawlikowski-chaos-engineer-crash-testing-your/id1480732807?i=1000493742757
+
+  - type: talk
+    title: "Getting Stakeholder Buy-in  for Chaos Engineering"
+    date: 2020-09-24
+    venue: devops.com
+    url: https://webinars.devops.com/getting-stakeholder-buy-in-for-chaos-engineering
+
+  - type: talk
+    title: "SREs ❤️ Chaos Enegineering | Mikolaj Pawlikowski | Conf42: SRE"
+    date: 2020-08-16
+    venue: devops.com
+    url: https://www.youtube.com/watch?v=9pBMn3DwHNY
+
+  - type: podcast
+    title: Chaos Engineering
+    date: 2020-07-29
+    venue: The Guilty Tester
+    url: https://theguiltytester.libsyn.com/the-guilty-tester-episode-18-mikolaj-pawlikowski-chaos-engineering
+
+  - type: talk
+    title: Creating Chaos using PowerfulSeal with Mikolaj Pawlikowski
+    date: 2020-07-03
+    venue: DevOps Paradox
+    url: https://www.youtube.com/watch?v=uy9d54YDTww
+
+  - type: podcast
+    title: "DOP 61: How to Use PowerfulSeal to Create Chaos in Your Kubernetes Clusters"
+    date: 2020-06-24
+    venue: DevOps Paradox
+    url: https://www.devopsparadox.com/episodes/how-to-use-powerfulseal-to-create-chaos-in-your-kubernetes-clusters-61/
+
+  - type: podcast
+    title: "S5E9: 'Chaotic Good'"
+    date: 2020-06-21
+    venue: Sysadministrivia
+    url: https://sysadministrivia.com/episodes/S5E9
+
+  - type: talk
+    title: Introducing Chaos in Bloomberg
+    date: 2018-09-28
+    venue: ChaosConf
+    url: https://www.youtube.com/watch?v=KKFiR_F3n8I
+
+  - type: talk
+    title: Visualise Cluster Connectivity with Goldpinger; Smash it with PowerfulSeal
+    date: 2018-12-16
+    venue: KubeCon
+    url: https://www.youtube.com/watch?v=DSFxRz_0TU4
+
+  - type: talk
+    title: Testing Distributed Software on Kubernetes with PowerfulSeal
+    date: 2017-12-07
+    venue: KubeCon
+    url: https://www.youtube.com/watch?v=00BMn0UjsG4
+
