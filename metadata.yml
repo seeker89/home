@@ -12,6 +12,14 @@ books:
     publisher: Manning
     url: https://www.manning.com/books/chaos-engineering
 
+projects:
+  - title: Goldpinger
+    description: Networking monitoring for kubernetes
+    url: https://github.com/bloomberg/goldpinger
+  - title: PowerfulSeal
+    description: Chaos Engineering for Kubernetes
+    url: https://github.com/powerfulseal/powerfulseal
+
 types:
   - name: podcast
     icon: ./SuperTinyIcons/images/svg/itunes_podcasts.svg
