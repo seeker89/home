@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 from jinja_markdown import MarkdownExtension
 
 DIVIDER = "#"*80
-BASE_FOLDER = "./"
+BASE_FOLDER = "./docs"
 
 # init the jinja stuff
 file_loader = FileSystemLoader("templates")
