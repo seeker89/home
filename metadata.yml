@@ -44,6 +44,8 @@ venues:
     url: https://www.chaosconf.io/
   - name: Conf42
     url: https://www.conf42.com/
+  - name: DevOps.com
+    url: https://devops.com/
 
 speaking:
   - type: podcast
@@ -61,7 +63,7 @@ speaking:
   - type: talk
     title: "Getting Stakeholder Buy-in  for Chaos Engineering"
     date: 2020-09-24
-    venue: devops.com
+    venue: DevOps.com
     url: https://webinars.devops.com/getting-stakeholder-buy-in-for-chaos-engineering
 
   - type: talk
