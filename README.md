@@ -1,2 +1,3 @@
-# -
-Home
+# Miko Pawlikowski
+
+https://mikolajpawlikowski.com/
