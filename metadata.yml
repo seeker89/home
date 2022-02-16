@@ -1,11 +1,3 @@
-types:
-  - name: podcast
-    icon: ./SuperTinyIcons/images/svg/itunes_podcasts.svg
-  - name: talk
-    icon: ./SuperTinyIcons/images/svg/youtube.svg
-  - name: podcast
-    icon: ./SuperTinyIcons/images/svg/youtube.svg
-
 socials:
   - url: https://github.com/seeker89
     icon: ./SuperTinyIcons/images/svg/github.svg
@@ -13,6 +5,20 @@ socials:
     icon: ./SuperTinyIcons/images/svg/linkedin.svg
   - url: https://twitter.com/mikopawlikowski
     icon: ./SuperTinyIcons/images/svg/twitter.svg
+
+books:
+  - title: "Chaos Engineering: Site reliability through controlled disruption"
+    date: 2021-02-01
+    publisher: Manning
+    url: https://www.manning.com/books/chaos-engineering
+
+types:
+  - name: podcast
+    icon: ./SuperTinyIcons/images/svg/itunes_podcasts.svg
+  - name: talk
+    icon: ./SuperTinyIcons/images/svg/youtube.svg
+  - name: podcast
+    icon: ./SuperTinyIcons/images/svg/youtube.svg
 
 venues:
   - name: The Guilty Tester
@@ -48,7 +54,7 @@ speaking:
     url: https://webinars.devops.com/getting-stakeholder-buy-in-for-chaos-engineering
 
   - type: talk
-    title: "SREs ❤️ Chaos Enegineering | Mikolaj Pawlikowski | Conf42: SRE"
+    title: "SREs <3 Chaos Enegineering | Mikolaj Pawlikowski | Conf42: SRE"
     date: 2020-08-16
     venue: devops.com
     url: https://www.youtube.com/watch?v=9pBMn3DwHNY

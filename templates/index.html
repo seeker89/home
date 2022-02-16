@@ -21,43 +21,29 @@
 
 <p>
     {%- for social in socials %}
-    <a href="{{ social.url }}" target="_blank">
-        <img src="{{ social.icon }}" width="50em" />
-    </a>
+    <a href="{{ social.url }}" target="_blank"><img src="{{ social.icon }}" width="50em" /></a>
     {%- endfor %}
 </p>
+</div></div>
 
-<deckgo-highlight-code language="python" terminal="carbon" class="mt-5" id="miko-code">
-<code slot="code">
-# books I've written
-books = [
-    dict(
-        title="Chaos Engineering: Crash test your applications",
-        url="https://www.manning.com/books/chaos-engineering",
-    )
-]
 
-# open source projects I created
-projects = [
-    dict(
-        name="PowerfulSeal",
-        description="Chaos Engineering for kubernetes",
-        url="https://github.com/powerfulseal/powerfulseal",
-    ),
-    dict(
-        name="Goldpinger",
-        description="Networking monitoring for kubernetes",
-        url="https://github.com/bloomberg/goldpinger",
-    ),
-]
-
-miko = {
-    "technologies": ["linux", "containers", "kubernetes", "go", "python", "ansible", "terraform"],
-    "books": books,
-    "projects": projects,
-}
-</code>
-</deckgo-highlight-code>
+<div class="row mt-3"><div class="col">
+    <h2 class="mt-2">Books</h1>
+</div></div>
+<div class="row mt-3"><div class="col">
+<table class="table">
+<tbody>
+    {%- for book in books %}
+    <tr class="text-left">
+        <td>
+            <a href="{{ book.url }}" target="_blank">{{ book.title }}</a>
+            <br  />
+            <small>Manning, {{ book.date }}</small>
+        </td>
+    </tr>
+    {%- endfor %}
+</tbody>
+</table>
 </div></div>
 
 
