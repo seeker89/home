@@ -17,6 +17,11 @@ context = dict()
 with open('metadata.yml') as f:
     context = yaml.load(f, Loader=yaml.FullLoader)
 
+venues_by_name = dict()
+for venue in context.get("venues", []):
+    venues_by_name[venue.get("name")] = venue.get("url")
+context["venues_by_name"] = venues_by_name
+
 # MAIN PAGES
 print(DIVIDER)
 print("Generating main pages")
@@ -26,3 +31,5 @@ for page in ["index.html"]:
         template = env.get_template(page)
         f.write(template.render(page=page, **context))
 
+print(DIVIDER)
+print("Done")
