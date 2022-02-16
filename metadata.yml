@@ -17,8 +17,6 @@ types:
     icon: ./SuperTinyIcons/images/svg/itunes_podcasts.svg
   - name: talk
     icon: ./SuperTinyIcons/images/svg/youtube.svg
-  - name: podcast
-    icon: ./SuperTinyIcons/images/svg/youtube.svg
 
 venues:
   - name: The Guilty Tester
@@ -33,6 +31,8 @@ venues:
     url: https://sysadministrivia.com/
   - name: ChaosConf
     url: https://www.chaosconf.io/
+  - name: Conf42
+    url: https://www.conf42.com/
 
 speaking:
   - type: podcast
@@ -42,7 +42,7 @@ speaking:
     url: https://www.youtube.com/watch?v=lxC4nFvvtvs
 
   - type: podcast
-    title: "Episode 97: Mikolaj Pawlikowski – Chaos Engineer, Crash Testing Your Applications"
+    title: "Episode 97: Mikolaj Pawlikowski - Chaos Engineer, Crash Testing Your Applications"
     date: 2020-10-05
     venue: Develomentor
     url: https://podcasts.apple.com/us/podcast/mikolaj-pawlikowski-chaos-engineer-crash-testing-your/id1480732807?i=1000493742757
@@ -54,9 +54,9 @@ speaking:
     url: https://webinars.devops.com/getting-stakeholder-buy-in-for-chaos-engineering
 
   - type: talk
-    title: "SREs <3 Chaos Enegineering | Mikolaj Pawlikowski | Conf42: SRE"
+    title: "SREs <3 Chaos Enegineering"
     date: 2020-08-16
-    venue: devops.com
+    venue: Conf42
     url: https://www.youtube.com/watch?v=9pBMn3DwHNY
 
   - type: podcast

@@ -17,6 +17,10 @@ context = dict()
 with open('metadata.yml') as f:
     context = yaml.load(f, Loader=yaml.FullLoader)
 
+# sort speaking engagements
+speaking = context.get("speaking")
+speaking.sort(key=lambda e: e.get("date"), reverse=True)
+
 venues_by_name = dict()
 for venue in context.get("venues", []):
     venues_by_name[venue.get("name")] = venue.get("url")
@@ -26,6 +30,7 @@ icon_by_type = dict()
 for t in context.get("types", []):
     icon_by_type[t.get("name")] = t.get("icon")
 context["icon_by_type"] = icon_by_type
+
 
 # MAIN PAGES
 print(DIVIDER)

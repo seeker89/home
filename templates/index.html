@@ -37,7 +37,8 @@
     <tr class="text-left">
         <td>
             <a href="{{ book.url }}" target="_blank">{{ book.title }}</a>
-            <br  />
+        </td>
+        <td>
             <small>Manning, {{ book.date }}</small>
         </td>
     </tr>
@@ -48,57 +49,24 @@
 
 
 <div class="row mt-3"><div class="col">
-    <h2 class="mt-2">Speaking engagements</h1>
+    <h2 class="mt-2">Speaking</h1>
 </div></div>
-
 
 <div class="row mt-3"><div class="col">
 <table class="table">
 <tbody>
+    {%- for item in speaking %}
     <tr class="text-left">
-        <td><a href="https://www.youtube.com/watch?v=lxC4nFvvtvs" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
-        <td><a href="https://www.youtube.com/watch?v=lxC4nFvvtvs" target="_blank">Chaos Community Broadcast: Episode 8</a></td>
+        <td><a href="{{ item.url }}" target="_blank"><img src="{{ icon_by_type.get(item.type) }}" width="30em" /></a></td>
+        <td><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></td>
+        <td>
+            <small>
+                <a href="{{ venues_by_name.get(item.venue).url }}" target="_blank">{{ item.venue }}</a>
+            </small>
+        </td>
+        <td><small>{{ item.date }}</small></td>
     </tr>
-    <tr class="text-left">
-        <td><a href="https://podcasts.apple.com/us/podcast/mikolaj-pawlikowski-chaos-engineer-crash-testing-your/id1480732807?i=1000493742757" target="_blank"><img src="./SuperTinyIcons/images/svg/itunes_podcasts.svg" width="30em" /></a></td>
-        <td><a href="https://podcasts.apple.com/us/podcast/mikolaj-pawlikowski-chaos-engineer-crash-testing-your/id1480732807?i=1000493742757" target="_blank">Develomentor - Episode 97: Mikolaj Pawlikowski – Chaos Engineer, Crash Testing Your Applications</a></td>
-    </tr>
-    <tr class="text-left">
-        <td><a href="https://webinars.devops.com/getting-stakeholder-buy-in-for-chaos-engineering" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
-        <td><a href="https://webinars.devops.com/getting-stakeholder-buy-in-for-chaos-engineering" target="_blank">DevOps.com - Getting Stakeholder Buy-in for Chaos Engineering</a></td>
-    </tr>
-    <tr class="text-left">
-        <td><a href="https://www.youtube.com/watch?v=9pBMn3DwHNY" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
-        <td><a href="https://www.youtube.com/watch?v=9pBMn3DwHNY" target="_blank">SRES ❤️ CHAOS ENGINEERING | MIKOLAJ PAWLIKOWSKI | CONF42: SRE</a></td>
-    </tr>
-    <tr class="text-left">
-        <td><a href="https://theguiltytester.libsyn.com/the-guilty-tester-episode-18-mikolaj-pawlikowski-chaos-engineering" target="_blank"><img src="./SuperTinyIcons/images/svg/itunes_podcasts.svg" width="30em" /></a></td>
-        <td><a href="https://theguiltytester.libsyn.com/the-guilty-tester-episode-18-mikolaj-pawlikowski-chaos-engineering" target="_blank">The Guilty Tester - Episode 18 - Mikolaj Pawlikowski - Chaos Engineering</a></td>
-    </tr>
-    <tr class="text-left">
-        <td><a href="https://www.youtube.com/watch?v=uy9d54YDTww" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
-        <td><a href="https://www.youtube.com/watch?v=uy9d54YDTww" target="_blank">Creating Chaos using PowerfulSeal with Mikolaj Pawlikowski</a></td>
-    </tr>
-    <tr class="text-left">
-        <td><a href="https://www.devopsparadox.com/episodes/how-to-use-powerfulseal-to-create-chaos-in-your-kubernetes-clusters-61" target="_blank"><img src="./SuperTinyIcons/images/svg/itunes_podcasts.svg" width="30em" /></a></td>
-        <td><a href="https://www.devopsparadox.com/episodes/how-to-use-powerfulseal-to-create-chaos-in-your-kubernetes-clusters-61" target="_blank">DevOps Paradox episode 61: How To Use PowerfulSeal To Create Chaos In Your Kubernetes Clusters</a></td>
-    </tr>
-    <tr class="text-left">
-        <td><a href="https://sysadministrivia.com/episodes/S5E9" target="_blank"><img src="./SuperTinyIcons/images/svg/itunes_podcasts.svg" width="30em" /></a></td>
-        <td><a href="https://sysadministrivia.com/episodes/S5E9" target="_blank">Sysadministrivia S5E9: "Chaotic Good"</a></td>
-    </tr>
-    <tr class="text-left">
-        <td><a href="https://www.youtube.com/watch?v=KKFiR_F3n8I" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
-        <td><a href="https://www.youtube.com/watch?v=KKFiR_F3n8I" target="_blank">Introducing Chaos in Bloomberg</a></td>
-    </tr>
-    <tr class="text-left">
-        <td><a href="https://www.youtube.com/watch?v=DSFxRz_0TU4" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
-        <td><a href="https://www.youtube.com/watch?v=DSFxRz_0TU4" target="_blank">Visualise Cluster Connectivity with Goldpinger; Smash it with PowerfulSeal</a></td>
-    </tr>
-    <tr class="text-left">
-        <td><a href="https://www.youtube.com/watch?v=00BMn0UjsG4" target="_blank"><img src="./SuperTinyIcons/images/svg/youtube.svg" width="30em" /></a></td>
-        <td><a href="https://www.youtube.com/watch?v=00BMn0UjsG4" target="_blank">Testing Distributed Software on Kubernetes with PowerfulSeal</a></td>
-    </tr>
+    {%- endfor %}
 </tbody>
 </table>
 </div></div>
