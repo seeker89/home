@@ -47,6 +47,8 @@ venues:
     url: https://www.conf42.com/
   - name: DevOps.com
     url: https://devops.com/
+  - name: GOTO
+    url: https://gotopia.eu/
 
 speaking:
   - type: podcast
@@ -115,3 +117,8 @@ speaking:
     venue: KubeCon
     url: https://www.youtube.com/watch?v=00BMn0UjsG4
 
+  - type: talk
+    title: "Making Chaos Engineering Boring: Debunking Myths Hampering Adoption"
+    date: 2021-02-10
+    venue: GOTO
+    url: https://www.youtube.com/watch?v=Pj42pryYv9A
