@@ -6,4 +6,7 @@ generate:
 
 clean:
 
+serve:
+	python serve.py
+
 all: clean deps generate 
