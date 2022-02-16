@@ -49,6 +49,26 @@ venues:
     url: https://devops.com/
   - name: GOTO
     url: https://gotopia.eu/
+  - name: MIM expo
+    url: https://majorincidentmanagement.com/
+  - name: Chaos Carnival
+    url: https://chaoscarnival.io/
+  - name: Tech Lead Journal
+    url: https://techleadjournal.dev/
+  - name: The Cloud Therapist
+    url: https://www.youtube.com/channel/UCm9VgexflGdSGdjeVgn6zXA
+  - name: Heroku Codeish
+    url: https://www.heroku.com/podcasts/codeish
+  - name: SRECon
+    url: https://www.usenix.org/conferences
+  - name: Adventures in DevOps
+    url: https://adventuresindevopspodcast.com/
+  - name: Techtarget - Search Software Quality
+    url: https://searchsoftwarequality.techtarget.com/
+  - name: SPaM cast
+    url: https://tcagley.wordpress.com/
+
+
 
 speaking:
   - type: podcast
@@ -122,3 +142,81 @@ speaking:
     date: 2021-02-10
     venue: GOTO
     url: https://www.youtube.com/watch?v=Pj42pryYv9A
+
+  - type: talk
+    title: "From a gimmick to SRE's best friend: the story of chaos engineering"
+    date: 2020-11-23
+    venue: MIM expo
+    url: https://www.youtube.com/watch?v=Aco3u-wCoRU
+
+  - type: talk
+    title: "Chaos Engineering: A 5-year retrospective"
+    date: 2021-09-21
+    venue: MIM expo
+    url: https://www.youtube.com/watch?v=zubvfToN5kw
+
+  - type: talk
+    title: "Keynote: wobbly bridges & sturdy software"
+    date: 2022-01-27
+    venue: Chaos Carnival
+    url: https://www.youtube.com/watch?v=RIvnt9GzWjk
+
+  - type: talk
+    title: "Keynote: Chaos Engineering in 2021"
+    date: 2021-03-28
+    venue: Conf42
+    url: https://www.youtube.com/watch?v=g01ObyU3aEU
+
+  - type: podcast
+    title: "#42 - Chaos Engineering"
+    date: 2021-06-14
+    venue: Tech Lead Journal
+    url: https://www.youtube.com/watch?v=wJ7bgOguf4k
+
+  - type: podcast
+    title: Chaos Engineering Book with Mikolaj Pawlikowski"
+    date: 2021-06-21
+    venue: The Cloud Therapist
+    url: https://www.youtube.com/watch?v=B6DIX9v-kQE
+
+  - type: podcast
+    title: "103. Chaos Engineering"
+    date: 2020-12-17
+    venue: Heroku Codeish
+    url: https://www.heroku.com/podcasts/codeish/103-chaos-engineering
+
+  - type: talk
+    title: "Why SREs can't afford to NOT do Chaos Engineering"
+    date: 2020-12-07
+    venue: SRECon
+    url: https://www.youtube.com/watch?v=RlSCqW5sNbc
+
+  - type: talk
+    title: "A Retrospective: Five Years Later, Was Chaos Engineering Worth It?"
+    date: 2021-10-12
+    venue: SRECon
+    url: https://www.youtube.com/watch?v=32uCGqlmpCs
+
+  - type: podcast
+    title: "DevOps 063: Chaos Engineering with Mikolaj Pawlikowski"
+    date: 2021-02-09
+    venue: Adventures in DevOps
+    url: https://adventuresindevopspodcast.com/68
+
+  - type: podcast
+    title: "Podcast: Break Things on Purpose | Mikolaj Pawlikowski"
+    date: 2021-01-28
+    venue: Break Things on Purpose
+    url: https://www.gremlin.com/blog/podcast-break-things-on-purpose-mikolaj-pawlikowski-engineering-lead-at-bloomberg/
+
+  - type: podcast
+    title: "Why chaos engineering isn't as chaotic as it sounds"
+    date: 2021-11-23
+    venue: Techtarget - Search Software Quality
+    url: https://searchsoftwarequality.techtarget.com/podcast/Why-chaos-engineering-isnt-as-chaotic-as-it-sounds
+
+  - type: podcast
+    title: SPaMCAST 639 – Chaos Engineering, A Conversation With Mikolaj Pawlikowski"
+    date: 2021-02-21
+    venue: SPaM cast
+    url: https://tcagley.wordpress.com/2021/02/21/spamcast-639-chaos-engineering-a-conversation-with-mikolaj-pawlikowski/

@@ -34,6 +34,9 @@ context["icon_by_type"] = icon_by_type
 
 # MAIN PAGES
 print(DIVIDER)
+for key in context.keys():
+    print(key, ":", len(context.get(key)))
+print(DIVIDER)
 print("Generating main pages")
 for page in ["index.html"]:
     with open(BASE_FOLDER + "/" + page, "w") as f:
