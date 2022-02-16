@@ -11,6 +11,7 @@ books:
     date: 2021-02-01
     publisher: Manning
     url: https://www.manning.com/books/chaos-engineering
+    img: ce.png
 
 projects:
   - title: Syscall Monkey

@@ -32,6 +32,10 @@
     {%- for book in books %}
     <tr class="text-left">
         <td>
+            <a href="{{ book.url }}" target="_blank">
+                <img src="./img/{{ book.img }}" width="200em" class="image"/></td>
+            </a>
+        <td>
             <a href="{{ book.url }}" target="_blank">{{ book.title }}</a>
         </td>
         <td>
@@ -52,7 +56,11 @@
 <tbody>
     {%- for project in projects %}
     <tr class="text-left">
-        <td><img src="./SuperTinyIcons/images/svg/github.svg" width="30em" /></td>
+        <td>
+            <a href="{{ project.url }}" target="_blank">
+                <img src="./SuperTinyIcons/images/svg/github.svg" width="30em" />
+            </a>
+        </td>
         <td><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></td>
         <td>{{ project.description }}</td>
     </tr>
