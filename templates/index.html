@@ -49,6 +49,24 @@
 
 
 <div class="row mt-3"><div class="col">
+    <h2 class="mt-2">Projects</h1>
+</div></div>
+<div class="row mt-3"><div class="col">
+<table class="table">
+<tbody>
+    {%- for project in projects %}
+    <tr class="text-left">
+        <td><img src="./SuperTinyIcons/images/svg/github.svg" width="30em" /></td>
+        <td><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></td>
+        <td>{{ project.description }}</td>
+    </tr>
+    {%- endfor %}
+</tbody>
+</table>
+</div></div>
+
+
+<div class="row mt-3"><div class="col">
     <h2 class="mt-2">Speaking</h1>
 </div></div>
 
